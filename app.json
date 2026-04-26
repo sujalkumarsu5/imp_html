@@ -1,0 +1,67 @@
+{
+  "name": "🦚Rᴀᴅʜᴀ♡︎Kʀɪsʜɴᴀ༗🌹-UPLOADER",
+  "description": "Telegram Video Extractor & Uploader Bot",
+  "logo": "https://files.catbox.moe/8e2qqw.jpg",
+  "keywords": ["telegram", "bot", "video", "pyrogram"],
+  "repository": "https://github.com/🦚Rᴀᴅʜᴀ♡︎Kʀɪsʜɴᴀ༗🌹/🦚Rᴀᴅʜᴀ♡︎Kʀɪsʜɴᴀ༗🌹-UPLOADER",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token from @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "MongoDB database name",
+      "value": "🦚Rᴀᴅʜᴀ♡︎Kʀɪsʜɴᴀ༗🌹_db",
+      "required": false
+    },
+    "CREDIT": {
+      "description": "Credit name shown in captions (6-8 letters)",
+      "value": "🦚Rᴀᴅʜᴀ♡︎Kʀɪsʜɴᴀ༗🌹",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "Space-separated list of admin Telegram IDs",
+      "required": false
+    },
+    "THUMBNAILS": {
+      "description": "Space-separated image URLs for default thumbnails",
+      "required": false
+    },
+    "WEB_SERVER": {
+      "description": "Enable Flask keep-alive server (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "PORT": {
+      "description": "Port for web server (set automatically by Heroku/Render)",
+      "value": "8000",
+      "required": false
+    }
+  },
+  "addons": [],
+  "buildpacks": [],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  }
+}
